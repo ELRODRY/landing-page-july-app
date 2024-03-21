@@ -1,0 +1,23 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+  border: solid 1px red;
+  background-color: #BDE0FE;
+  flex-direction: column;
+  margin: 0;
+
+
+}
