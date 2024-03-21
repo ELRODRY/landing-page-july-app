@@ -1,6 +1,8 @@
 import "./App.css";
 import precentacionImg from "./assets/presentacion.jpg";
 import tarotImg from "./assets/tarot.jpg";
+import tresPreguntasImg from "./assets/3preguntas.png";
+import amorVinculosImg from "./assets/lecturaAmorVinculos.png";
 
 function App() {
   return (
@@ -44,9 +46,68 @@ function App() {
             aportar luz en situaciones donde la subjetividad nos llena de ideas
             desdibujadas de la realidad.
           </p>
+        </div>
+        <div className="servTresPreguntas">
+          <img
+            className="imgServicioTresPreguntas"
+            src={tresPreguntasImg}
+            alt="Imagen servicio tres preguntas"
+          />
+          <div className="containerParrafoTresServ">
+            <p className="parrafoTresServ">
+              Este formato va orientado a responder dudas concretas. Las
+              preguntas pueden ser todas del mismo tema o temas distintos.
+              Consejos a la hora de elegir esta opción de lectura. Las lecturas
+              son via whatsapp o telegram la vía que te sea mas cómoda. Para que
+              las respuestas puedan ser lo más completas posibles es necesario
+              el contexto de la pregunta, siéntete libre de poder enviar audios
+              para poder explicar o hacer tu pregunta. Las respuestas jamás
+              quedarán en un No o solo un Si siempre llevan un desarrollo, una
+              explicación o un consejo según sea necesario.
+            </p>
+            <h3>Valor de lectura escrita </h3>
+            <h4>En Argentina $5200</h4>
+            <h4>En El Exterior Pay Pal Usd 7</h4>
+            <a href=" https://wa.link/mdpnf3 " target="_blank">
+              <button>Solicitar Turno</button>
+            </a>
+          </div>
+        </div>
+        <div className="servLecAmorVinculos">
+          <img
+            className="imgServicioAmorVinculos"
+            src={amorVinculosImg}
+            alt="lectura amor vinculos"
+          />
+          <div className="containerParrafoAmorVinculos">
+            <p className="parrafoAmorVinculos">
+              ¿Qué hago? ¿Qué piensa esa persona? ¿Le importo? ¿debería
+              continuar con ella? Cuando las emociones se vuelven caóticas y
+              nuestras cabeza es un caos el tarot puede aporta claridad desde
+              una mirada objetiva, la cual te lleva a tener una comprensión más
+              profunda de la relación, el tarot puede capacitarte para tomar
+              decisiones más conscientes , ya sea para seguir adelante, trabajar
+              en aspectos de la relación o tomar otro camino. Cantidad de
+              preguntas. a gusto. Tiempo 30min
+            </p>
+            <div className="preciosAmorVinculos">
+              <div className="amorVinculosVideoLLamada">
+                <h3>Valor de lectura videollamada</h3>
+                <h4>En Argentina $10000</h4>
+                <h4>En El Exterior Pay Pal Usd 17Usd </h4>
+              </div>
+              <div className="amorVinculosEscritura">
+                <h3>Valor de lectura escrita</h3>
+                <h4>En Argentina $8000</h4>
+                <h4>En El Exterior Pay Pal Usd 12Usd</h4>
+              </div>
+            </div>
 
+            <a href="https://wa.link/n9k5jl" target="_blank"><button>Solicitar Turno</button></a>
+          </div>
         </div>
       </div>
+
       <footer>alalaalaalalaalalaalalaalala</footer>
     </>
   );
