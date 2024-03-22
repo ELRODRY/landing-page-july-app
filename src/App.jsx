@@ -3,6 +3,9 @@ import precentacionImg from "./assets/presentacion.jpg";
 import tarotImg from "./assets/tarot.jpg";
 import tresPreguntasImg from "./assets/3preguntas.png";
 import amorVinculosImg from "./assets/lecturaAmorVinculos.png";
+import lecturaGeneralImg from "./assets/lecturaGeneral.png";
+import ButtonTurno from "./components/ButtonTurno.jsx"
+
 
 function App() {
   return (
@@ -68,9 +71,7 @@ function App() {
             <h3>Valor de lectura escrita </h3>
             <h4>En Argentina $5200</h4>
             <h4>En El Exterior Pay Pal Usd 7</h4>
-            <a href=" https://wa.link/mdpnf3 " target="_blank">
-              <button>Solicitar Turno</button>
-            </a>
+            <ButtonTurno linkMensaje="mdpnf3" />
           </div>
         </div>
         <div className="servLecAmorVinculos">
@@ -102,11 +103,15 @@ function App() {
                 <h4>En El Exterior Pay Pal Usd 12Usd</h4>
               </div>
             </div>
-
-            <a href="https://wa.link/n9k5jl" target="_blank"><button>Solicitar Turno</button></a>
+            <ButtonTurno linkMensaje="n9k5jl" />
           </div>
         </div>
-      </div>
+        <div className="servLecturaGeneral">
+          <img src={lecturaGeneralImg} alt="Lectura General" />
+
+        </div>
+
+      </div >
 
       <footer>alalaalaalalaalalaalalaalala</footer>
     </>
