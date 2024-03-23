@@ -4,9 +4,9 @@ import tarotImg from "./assets/tarot.jpg";
 import tresPreguntasImg from "./assets/3preguntas.png";
 import amorVinculosImg from "./assets/lecturaAmorVinculos.png";
 import lecturaGeneralImg from "./assets/lecturaGeneral.png";
-import ButtonTurno from "./components/ButtonTurno.jsx"
-
-
+import ButtonTurno from "./components/ButtonTurno.jsx";
+import manifestacionImg from "./assets/manifestacion.png"
+import ImgServ from "./components/ImgServ.jsx";
 function App() {
   return (
     <>
@@ -51,11 +51,7 @@ function App() {
           </p>
         </div>
         <div className="servTresPreguntas">
-          <img
-            className="imgServicioTresPreguntas"
-            src={tresPreguntasImg}
-            alt="Imagen servicio tres preguntas"
-          />
+          <ImgServ imagen={tresPreguntasImg} textoAlt="Tres preguntas" />
           <div className="containerParrafoTresServ">
             <p className="parrafoTresServ">
               Este formato va orientado a responder dudas concretas. Las
@@ -70,16 +66,12 @@ function App() {
             </p>
             <h3>Valor de lectura escrita </h3>
             <h4>En Argentina $5200</h4>
-            <h4>En El Exterior Pay Pal Usd 7</h4>
+            <h4>En El Exterior Pay Pal 7 Usd</h4>
             <ButtonTurno linkMensaje="mdpnf3" />
           </div>
         </div>
         <div className="servLecAmorVinculos">
-          <img
-            className="imgServicioAmorVinculos"
-            src={amorVinculosImg}
-            alt="lectura amor vinculos"
-          />
+          <ImgServ imagen={amorVinculosImg} textoAlt="Amor y vinculos" />
           <div className="containerParrafoAmorVinculos">
             <p className="parrafoAmorVinculos">
               ¿Qué hago? ¿Qué piensa esa persona? ¿Le importo? ¿debería
@@ -95,23 +87,70 @@ function App() {
               <div className="amorVinculosVideoLLamada">
                 <h3>Valor de lectura videollamada</h3>
                 <h4>En Argentina $10000</h4>
-                <h4>En El Exterior Pay Pal Usd 17Usd </h4>
+                <h4>En El Exterior Pay Pal 17 Usd </h4>
               </div>
               <div className="amorVinculosEscritura">
                 <h3>Valor de lectura escrita</h3>
                 <h4>En Argentina $8000</h4>
-                <h4>En El Exterior Pay Pal Usd 12Usd</h4>
+                <h4>En El Exterior Pay Pal 12 Usd</h4>
               </div>
             </div>
             <ButtonTurno linkMensaje="n9k5jl" />
           </div>
         </div>
         <div className="servLecturaGeneral">
-          <img src={lecturaGeneralImg} alt="Lectura General" />
-
+          <ImgServ imagen={lecturaGeneralImg} textoAlt="Lectura general" />
+          <div className="containerParrafoLecturaGeneral">
+            <p className="parrafoLecturaGeneral">
+              La lectura de tarot general puede abarcar diferentes temas como
+              amor,salud, trabajo, o cualquier otra inquietud que tengas.
+              Beneficios de conocer el panorama general de tu realidad actual
+              pueden ser Claridad mental, lo que genera alivio de estrés, más
+              que nada si nos encontramos ante una toma de elección que
+              consideramos importante. Como esta lectura nos permite ver cómo
+              las diferentes áreas de tu vida se relacionan es sumamente útil
+              para encontrar el origen de problemáticas. Cuántas veces creíamos
+              que el problema era uno y después de recibir una mirada externa
+              objetiva nos encontramos con que la causa o el conflicto era otro.
+              Si tu situación es caótica te animo a elegir esta opción. Cantidad
+              de preguntas a gusto. Tiempo 50min
+            </p>
+            <div className="preciosLecturaGeneral">
+              <div className="lecturaGeneralLLamada">
+                <h3>Valor de lectura videollamada</h3>
+                <h4>En Argentina $12200</h4>
+                <h4>En El Exterior Pay Pal 33 Usd</h4>
+              </div>
+              <div className="lecturaGeneralEscritura">
+                <h3>Valor de lectura escrita</h3>
+                <h4>En Argentina $9000</h4>
+                <h4>En El Exterior Pay Pal 27 Usd</h4>
+              </div>
+            </div>
+            <ButtonTurno linkMensaje="noo79b" />
+          </div>
+        </div>
+        <div className="servManifestacion">
+          <ImgServ imagen={manifestacionImg} textoAlt="manifestacion" />
+          <div className="">
+            <p className=""></p>
+            <div className="">
+              <div className="">
+                <h3>Valor de lectura videollamada</h3>
+                <h4>En Argentina $</h4>
+                <h4>En El Exterior Pay Pal Usd</h4>
+              </div>
+              <div className="">
+                <h3>Valor de lectura escrita</h3>
+                <h4>En Argentina $</h4>
+                <h4>En El Exterior Pay Pal Usd</h4>
+              </div>
+            </div>
+            <ButtonTurno linkMensaje="" />
+          </div>
         </div>
 
-      </div >
+      </div>
 
       <footer>alalaalaalalaalalaalalaalala</footer>
     </>

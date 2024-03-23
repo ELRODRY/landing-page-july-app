@@ -1,0 +1,23 @@
+
+
+const EstructuraServ = () => {
+    <div className="">
+        <img className="" src="" alt="" />
+        <div className="">
+            <p className=""></p>
+            <div className="">
+                <div className="">
+                    <h3>Valor de lectura videollamada</h3>
+                    <h4>En Argentina $</h4>
+                    <h4>En El Exterior Pay Pal Usd</h4>
+                </div>
+                <div className="">
+                    <h3>Valor de lectura escrita</h3>
+                    <h4>En Argentina $</h4>
+                    <h4>En El Exterior Pay Pal Usd</h4>
+                </div>
+            </div>
+            <ButtonTurno linkMensaje="" />
+        </div>
+    </div>
+}

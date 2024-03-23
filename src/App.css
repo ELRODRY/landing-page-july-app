@@ -47,11 +47,8 @@ header {
 
 .segundaPresentacionImg {
   width: 700px;
-
   margin-top: 30px;
 }
-
-
 
 h1 {
   font-family: "Tangerine", cursive;
@@ -62,17 +59,10 @@ h1 {
   margin-bottom: 30px;
 }
 
-
 .servTresPreguntas {
   display: flex;
   width: 1000px;
   margin-top: 60px;
-}
-
-.imgServicioTresPreguntas {
-  width: 300px;
-  height: 300px;
-  margin-right: 60px;
 }
 
 .containerParrafoTresServ {
@@ -84,25 +74,10 @@ h1 {
   font-size: 15px;
 }
 
-button {
-  background-color: #d43040c2;
-  margin-top: 15px;
-  border-radius: 50px;
-  font-size: 25px;
-  color: antiquewhite;
-}
-
-
 .servLecAmorVinculos {
   display: flex;
   width: 1000px;
   margin-top: 60px;
-}
-
-.imgServicioAmorVinculos {
-  width: 300px;
-  height: 300px;
-  margin-right: 60px;
 }
 
 .containerParrafoAmorVinculos {
@@ -120,11 +95,32 @@ button {
   margin-bottom: 20px;
 }
 
+.servLecturaGeneral {
+  display: flex;
+  width: 1000px;
+  margin-top: 60px;
+}
 
+.containerParrafoLecturaGeneral {
+  width: 600px;
+}
 
+.parrafoLecturaGeneral {
+  line-height: 1.5;
+  font-size: 15px;
+}
 
+.preciosLecturaGeneral {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
 
-
+.servManifestacion {
+  display: flex;
+  width: 1000px;
+  margin-top: 60px;
+}
 
 
 
