@@ -1,23 +1,42 @@
+import "./EstructuraServ.css";
+import ImgServ from "./ImgServ";
+import ButtonTurno from "./ButtonTurno";
+
+const EstructuraServ = ({
+    parrafo,
+    videoLLamadaArg,
+    videoLLamadaUsd,
+    escritaArg,
+    escritaUsd,
+    imagen,
+    textoAlt,
+    linkMensaje
+}) => {
 
 
-const EstructuraServ = () => {
-    <div className="">
-        <img className="" src="" alt="" />
-        <div className="">
-            <p className=""></p>
-            <div className="">
-                <div className="">
-                    <h3>Valor de lectura videollamada</h3>
-                    <h4>En Argentina $</h4>
-                    <h4>En El Exterior Pay Pal Usd</h4>
+    return (
+        <div className="containerSercicios">
+            <ImgServ imagen={imagen} textoAlt={textoAlt} />
+            <div className="containerParrafoGeneral">
+                <p className="parrafoGeneral">{parrafo}</p>
+                <div className="containerPrecios">
+                    {videoLLamadaArg && videoLLamadaUsd &&
+                        <div className="opcion1">
+                            <h3>Valor de lectura videollamada</h3>
+                            <h4>{videoLLamadaArg}</h4>
+                            <h4>{videoLLamadaUsd}</h4>
+                        </div>}
+                    {escritaArg && escritaUsd &&
+                        <div className="opcion2">
+                            <h3>Valor de lectura escrita</h3>
+                            <h4>{escritaArg}</h4>
+                            <h4>{escritaUsd}</h4>
+                        </div>}
                 </div>
-                <div className="">
-                    <h3>Valor de lectura escrita</h3>
-                    <h4>En Argentina $</h4>
-                    <h4>En El Exterior Pay Pal Usd</h4>
-                </div>
+                <ButtonTurno linkMensaje={linkMensaje} />
             </div>
-            <ButtonTurno linkMensaje="" />
         </div>
-    </div>
-}
+    );
+};
+
+export default EstructuraServ;

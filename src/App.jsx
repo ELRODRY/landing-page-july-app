@@ -5,8 +5,9 @@ import tresPreguntasImg from "./assets/3preguntas.png";
 import amorVinculosImg from "./assets/lecturaAmorVinculos.png";
 import lecturaGeneralImg from "./assets/lecturaGeneral.png";
 import ButtonTurno from "./components/ButtonTurno.jsx";
-import manifestacionImg from "./assets/manifestacion.png"
+import tarotAstroImg from "./assets/tarotAstrologia.png";
 import ImgServ from "./components/ImgServ.jsx";
+import EstructuraServ from "./components/EstructuraServ.jsx";
 function App() {
   return (
     <>
@@ -50,106 +51,65 @@ function App() {
             desdibujadas de la realidad.
           </p>
         </div>
-        <div className="servTresPreguntas">
-          <ImgServ imagen={tresPreguntasImg} textoAlt="Tres preguntas" />
-          <div className="containerParrafoTresServ">
-            <p className="parrafoTresServ">
-              Este formato va orientado a responder dudas concretas. Las
-              preguntas pueden ser todas del mismo tema o temas distintos.
-              Consejos a la hora de elegir esta opción de lectura. Las lecturas
-              son via whatsapp o telegram la vía que te sea mas cómoda. Para que
-              las respuestas puedan ser lo más completas posibles es necesario
-              el contexto de la pregunta, siéntete libre de poder enviar audios
-              para poder explicar o hacer tu pregunta. Las respuestas jamás
-              quedarán en un No o solo un Si siempre llevan un desarrollo, una
-              explicación o un consejo según sea necesario.
-            </p>
-            <h3>Valor de lectura escrita </h3>
-            <h4>En Argentina $5200</h4>
-            <h4>En El Exterior Pay Pal 7 Usd</h4>
-            <ButtonTurno linkMensaje="mdpnf3" />
-          </div>
-        </div>
-        <div className="servLecAmorVinculos">
-          <ImgServ imagen={amorVinculosImg} textoAlt="Amor y vinculos" />
-          <div className="containerParrafoAmorVinculos">
-            <p className="parrafoAmorVinculos">
-              ¿Qué hago? ¿Qué piensa esa persona? ¿Le importo? ¿debería
-              continuar con ella? Cuando las emociones se vuelven caóticas y
-              nuestras cabeza es un caos el tarot puede aporta claridad desde
-              una mirada objetiva, la cual te lleva a tener una comprensión más
-              profunda de la relación, el tarot puede capacitarte para tomar
-              decisiones más conscientes , ya sea para seguir adelante, trabajar
-              en aspectos de la relación o tomar otro camino. Cantidad de
-              preguntas. a gusto. Tiempo 30min
-            </p>
-            <div className="preciosAmorVinculos">
-              <div className="amorVinculosVideoLLamada">
-                <h3>Valor de lectura videollamada</h3>
-                <h4>En Argentina $10000</h4>
-                <h4>En El Exterior Pay Pal 17 Usd </h4>
-              </div>
-              <div className="amorVinculosEscritura">
-                <h3>Valor de lectura escrita</h3>
-                <h4>En Argentina $8000</h4>
-                <h4>En El Exterior Pay Pal 12 Usd</h4>
-              </div>
-            </div>
-            <ButtonTurno linkMensaje="n9k5jl" />
-          </div>
-        </div>
-        <div className="servLecturaGeneral">
-          <ImgServ imagen={lecturaGeneralImg} textoAlt="Lectura general" />
-          <div className="containerParrafoLecturaGeneral">
-            <p className="parrafoLecturaGeneral">
-              La lectura de tarot general puede abarcar diferentes temas como
-              amor,salud, trabajo, o cualquier otra inquietud que tengas.
-              Beneficios de conocer el panorama general de tu realidad actual
-              pueden ser Claridad mental, lo que genera alivio de estrés, más
-              que nada si nos encontramos ante una toma de elección que
-              consideramos importante. Como esta lectura nos permite ver cómo
-              las diferentes áreas de tu vida se relacionan es sumamente útil
-              para encontrar el origen de problemáticas. Cuántas veces creíamos
-              que el problema era uno y después de recibir una mirada externa
-              objetiva nos encontramos con que la causa o el conflicto era otro.
-              Si tu situación es caótica te animo a elegir esta opción. Cantidad
-              de preguntas a gusto. Tiempo 50min
-            </p>
-            <div className="preciosLecturaGeneral">
-              <div className="lecturaGeneralLLamada">
-                <h3>Valor de lectura videollamada</h3>
-                <h4>En Argentina $12200</h4>
-                <h4>En El Exterior Pay Pal 33 Usd</h4>
-              </div>
-              <div className="lecturaGeneralEscritura">
-                <h3>Valor de lectura escrita</h3>
-                <h4>En Argentina $9000</h4>
-                <h4>En El Exterior Pay Pal 27 Usd</h4>
-              </div>
-            </div>
-            <ButtonTurno linkMensaje="noo79b" />
-          </div>
-        </div>
-        <div className="servManifestacion">
-          <ImgServ imagen={manifestacionImg} textoAlt="manifestacion" />
-          <div className="">
-            <p className=""></p>
-            <div className="">
-              <div className="">
-                <h3>Valor de lectura videollamada</h3>
-                <h4>En Argentina $</h4>
-                <h4>En El Exterior Pay Pal Usd</h4>
-              </div>
-              <div className="">
-                <h3>Valor de lectura escrita</h3>
-                <h4>En Argentina $</h4>
-                <h4>En El Exterior Pay Pal Usd</h4>
-              </div>
-            </div>
-            <ButtonTurno linkMensaje="" />
-          </div>
-        </div>
+        <EstructuraServ
+          imagen={tresPreguntasImg}
+          textoAlt="Tres Preguntas"
+          linkMensaje="mdpnf3"
+          parrafo="¿Qué hago? ¿Qué piensa esa persona? ¿Le importo?  ¿debería continuar con ella?
+          Cuando las emociones se vuelven caóticas y nuestras cabeza es un caos el tarot puede aporta 
+          claridad desde una mirada objetiva, la cual te lleva a tener una comprensión más profunda
+           de la relación, el tarot puede capacitarte para tomar decisiones más conscientes , ya sea 
+           para seguir adelante, trabajar en aspectos de la  relación o tomar otro camino.
+           Cantidad de preguntas a gusto. 
+           Tiempo 30min"
+          escritaArg="En Argentina $5200"
+          escritaUsd="En El Exterior Pay Pal 7 Usd"
+        />
 
+        <EstructuraServ
+          imagen={amorVinculosImg}
+          textoAlt="Amor y Vinculos"
+          linkMensaje="n9k5jl"
+          parrafo="¿Qué hago? ¿Qué piensa esa persona? ¿Le importo?  ¿debería continuar con ella?
+          Cuando las emociones se vuelven caóticas y nuestras cabeza es un caos el tarot puede aporta 
+          claridad desde una mirada objetiva, la cual te lleva a tener una comprensión más profunda
+           de la relación, el tarot puede capacitarte para tomar decisiones más conscientes , ya sea 
+           para seguir adelante, trabajar en aspectos de la  relación o tomar otro camino.
+           Cantidad de preguntas a gusto. 
+           Tiempo 30min"
+          videoLLamadaArg="En Argentina $10000"
+          videoLLamadaUsd="En El Exterior Pay Pal 17 Usd"
+          escritaArg="En Argentina $8000"
+          escritaUsd="En El Exterior Pay Pal 12 Usd"
+        />
+        <EstructuraServ
+          imagen={lecturaGeneralImg}
+          textoAlt="Lectura General"
+          linkMensaje="noo79b"
+          parrafo="La lectura de tarot general puede abarcar diferentes temas como amor,salud, trabajo, o cualquier otra inquietud que tengas.
+          Beneficios de conocer el panorama general de tu realidad actual pueden ser  Claridad mental, lo que genera alivio de estrés, más que nada si nos encontramos ante una toma de elección que consideramos importante.
+          Como esta lectura nos permite ver cómo las diferentes áreas de tu vida se relacionan es sumamente útil para encontrar el origen de problemáticas.
+          Si tu situación es caótica te animo a elegir esta opción. 
+          Cantidad de preguntas a gusto. 
+          Tiempo 50min"
+          videoLLamadaArg="En Argentina $12200"
+          videoLLamadaUsd="En El Exterior Pay Pal 33 Usd"
+          escritaArg="En Argentina $9000"
+          escritaUsd="En El Exterior Pay Pal 27 Usd"
+        />
+        <EstructuraServ
+          imagen={tarotAstroImg}
+          textoAlt="Tarot y Astrologia"
+          linkMensaje="3tvr6y"
+          parrafo="Este formato es uno de los más recomendados en Año Nuevo, o en las fechas de cumpleaños. Desde la astrología tenemos información sumamente relevante de ti, desde cómo es tu personalidad, mecanismos o patrones de comportamiento entre otros. 
+          En cada cumpleaños tenemos algo que se llama revolución solar, la cual nos habla de cuál va a ser el mood energético de nuestro año. No solo se limita a predecir acontecimientos, sino que da información sobre el desarrollo personal y espiritual.
+          Si para ti el desarrollo del ser es importante y quieres saber qué aspectos seran importantes en este nuevo año de vida la revolución solar es tu mejor opción. 
+          Mientras que si tu necesidad de información es para tomar decisiones que tendran posibles efectos a largo plazo( más de 1 año) la carta natal es tu mejor opción."
+          videoLLamadaArg="En Argentina $19000"
+          videoLLamadaUsd="En El Exterior Pay Pal 35 Usd"
+          escritaArg="En Argentina $15500"
+          escritaUsd="En El Exterior Pay Pal 27 Usd"
+        />
       </div>
 
       <footer>alalaalaalalaalalaalalaalala</footer>
