@@ -1,20 +1,20 @@
 .containerSercicios {
-    display: flex;
-    width: 1000px;
-    margin-top: 60px;
+  display: flex;
+  width: 1000px;
+  margin-top: 60px;
 }
 
 .containerParrafoGeneral {
-    width: 600px;
+  width: 600px;
 }
 
 .parrafoGeneral {
-    line-height: 1.5;
-    font-size: 15px;
+  line-height: 1.5;
+  font-size: 15px;
 }
 
 .containerPrecios {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }

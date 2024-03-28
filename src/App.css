@@ -1,7 +1,7 @@
 header {
   /* border: solid 1px violet; */
   width: 100%;
-  background-color: #FFAFCC;
+  background-color: #ffafcc;
   height: 40px;
   position: fixed;
   margin-top: 0;
@@ -13,7 +13,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 .precentacionImg {
@@ -29,7 +28,7 @@ header {
 }
 
 .segundaPresentacion {
-  background-color: #A2D2FF;
+  background-color: #a2d2ff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -122,27 +121,11 @@ h1 {
   margin-top: 60px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 footer {
   /* border: solid 1px rgb(0, 217, 255); */
   height: 50px;
   bottom: 0;
   width: 100%;
-  background-color: #CDB4DB;
+  background-color: #cdb4db;
   margin-top: 50px;
 }
