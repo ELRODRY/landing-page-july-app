@@ -1,11 +1,41 @@
 header {
-  /* border: solid 1px violet; */
   width: 100%;
   background-color: #ffafcc;
   height: 40px;
   position: fixed;
   margin-top: 0;
   display: flex;
+  justify-content: end;
+}
+
+.containerRedesSocialesTurno {
+  display: flex;
+  margin-right: 30px;
+}
+
+.redesSociales {
+  display: flex;
+  margin-right: 50px;
+  place-items: center;
+}
+
+.linkRedesSociales {
+  text-decoration: none;
+  color: #012a4a;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+.solicitarTurno {
+  display: flex;
+  place-items: center;
+}
+
+.linkTurno {
+  text-decoration: none;
+  color: #012a4a;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
 }
 
 .precentacion {
@@ -58,74 +88,61 @@ h1 {
   margin-bottom: 30px;
 }
 
-.servTresPreguntas {
-  display: flex;
-  width: 1000px;
-  margin-top: 60px;
-}
-
-.containerParrafoTresServ {
-  width: 600px;
-}
-
-.parrafoTresServ {
-  line-height: 1.5;
-  font-size: 15px;
-}
-
-.servLecAmorVinculos {
-  display: flex;
-  width: 1000px;
-  margin-top: 60px;
-}
-
-.containerParrafoAmorVinculos {
-  width: 600px;
-}
-
-.parrafoAmorVinculos {
-  line-height: 1.5;
-  font-size: 15px;
-}
-
-.preciosAmorVinculos {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-
-.servLecturaGeneral {
-  display: flex;
-  width: 1000px;
-  margin-top: 60px;
-}
-
-.containerParrafoLecturaGeneral {
-  width: 600px;
-}
-
-.parrafoLecturaGeneral {
-  line-height: 1.5;
-  font-size: 15px;
-}
-
-.preciosLecturaGeneral {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-
-.servManifestacion {
-  display: flex;
-  width: 1000px;
-  margin-top: 60px;
-}
-
 footer {
-  /* border: solid 1px rgb(0, 217, 255); */
+  display: flex;
   height: 50px;
   bottom: 0;
   width: 100%;
   background-color: #cdb4db;
   margin-top: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.linkInstagram {
+  display: flex;
+  align-items: center;
+  margin-right: 80px;
+  text-decoration: none;
+  color: #012a4a;
+  transition: all 500ms;
+}
+
+.linkInstagram:hover {
+  transform: scale(1.3);
+}
+
+.instagramImg {
+  margin-right: 5px;
+}
+
+.linkTelegram {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #012a4a;
+  transition: all 500ms;
+}
+
+.linkTelegram:hover {
+  transform: scale(1.3);
+}
+
+.telegramImg {
+  margin-right: 5px;
+}
+
+.botonWhatsapp {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 0px 10px 10px 0px;
+  width: 85px;
+  height: 85px;
+  z-index: 1;
+  transition: all 500ms;
+}
+
+.botonWhatsapp:hover {
+  transform: scale(1.3);
 }

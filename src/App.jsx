@@ -5,14 +5,31 @@ import tresPreguntasImg from "./assets/3preguntas.png";
 import amorVinculosImg from "./assets/lecturaAmorVinculos.png";
 import lecturaGeneralImg from "./assets/lecturaGeneral.png";
 import manifestacioAcccionImg from "./assets/manifestacionAccion.png";
-// import manifestacionImg from "./assets/manifestacion .png";
+import whatsappLogo from "./assets/whatsapp.svg";
 import tarotAstroImg from "./assets/tarotAstrologia.png";
 import EstructuraServ from "./components/EstructuraServ.jsx";
+import instagramIcon from "./assets/instagram.svg";
+import telegramIcon from "./assets/telegram.svg";
 function App() {
   return (
     <>
       <header>
-        <p>plplpl</p>
+        <div className="containerRedesSocialesTurno">
+          <div className="redesSociales">
+            <a className="linkRedesSociales" href="#footerLinks">
+              Redes Sociales
+            </a>
+          </div>
+          <div className="solicitarTurno">
+            <a
+              className="linkTurno"
+              href="https://wa.link/xu56hn"
+              target="_blank"
+            >
+              Solicitar Turno
+            </a>
+          </div>
+        </div>
       </header>
       <div className="precentacion">
         <h1>Tarot Online y Ejercicios de Manifestación </h1>
@@ -159,8 +176,42 @@ function App() {
           en base a tu situación
         </EstructuraServ>
       </div>
+      <div className="botonWhatsapp">
+        <a href="https://wa.link/xu56hn" target="_blank">
+          <img
+            className="whatsappImg"
+            src={whatsappLogo}
+            alt="Boton Whatsapp"
+          />
+        </a>
+      </div>
+      <footer id="footerLinks">
+        <a
+          className="linkInstagram"
+          href="https://www.google.com/webhp?hl=es-419&sa=X&ved=0ahUKEwjznLbYgZ2FAxXMq5UCHQxGAu0QPAgJ"
+          target="_blank"
+        >
+          <img
+            className="instagramImg"
+            src={instagramIcon}
+            alt="Icono Instagram"
+          />
+          <p>Instagram</p>
+        </a>
 
-      <footer>alalaalaalalaalalaalalaalala</footer>
+        <a
+          className="linkTelegram"
+          href="https://www.google.com/webhp?hl=es-419&sa=X&ved=0ahUKEwjznLbYgZ2FAxXMq5UCHQxGAu0QPAgJ"
+          target="_blank"
+        >
+          <img
+            className="telegramImg"
+            src={telegramIcon}
+            alt="Icono Telegram"
+          />
+          <p>Telegram</p>
+        </a>
+      </footer>
     </>
   );
 }

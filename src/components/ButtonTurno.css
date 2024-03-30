@@ -1,21 +1,25 @@
 .botonTurno {
-    border: 2px Solid rgb(41, 41, 41);
-    background-color: #d43040c2;
-    margin-top: 15px;
-    border-radius: 50px;
-    text-decoration: none;
-    padding-left: 5px;
-    padding-right: 5px;
-    width: 175px;
-    height: 35px;
-    display: flex;
+  border: 2px Solid rgb(41, 41, 41);
+  background-color: #d43040c2;
+  margin-top: 15px;
+  border-radius: 50px;
+  text-decoration: none;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 175px;
+  height: 35px;
+  display: flex;
+  transition: all 500ms;
+}
+
+.botonTurno:hover {
+  transform: scale(1.3);
 }
 
 .anchorBoton {
-    text-decoration: none;
-    font-size: 25px;
-    margin: auto;
-    color: antiquewhite;
-    font-family: Arial, Helvetica, sans-serif;
-
+  text-decoration: none;
+  font-size: 25px;
+  margin: auto;
+  color: antiquewhite;
+  font-family: Arial, Helvetica, sans-serif;
 }
