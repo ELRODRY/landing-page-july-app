@@ -8,18 +8,13 @@ import manifestacioAcccionImg from "./assets/manifestacionAccion.png";
 import whatsappLogo from "./assets/whatsapp.svg";
 import tarotAstroImg from "./assets/tarotAstrologia.png";
 import EstructuraServ from "./components/EstructuraServ.jsx";
-import instagramIcon from "./assets/instagram.svg";
 import telegramIcon from "./assets/telegram.svg";
+import youtubeIcon from "./assets/youtube.svg";
 function App() {
   return (
     <>
       <header>
         <div className="containerRedesSocialesTurno">
-          <div className="redesSociales">
-            <a className="linkRedesSociales" href="#footerLinks">
-              Redes Sociales
-            </a>
-          </div>
           <div className="solicitarTurno">
             <a
               className="linkTurno"
@@ -29,34 +24,44 @@ function App() {
               Solicitar Turno
             </a>
           </div>
+          <div className="redesSociales">
+            <a className="linkRedesSociales" href="#footerLinks">
+              Redes Sociales
+            </a>
+          </div>
         </div>
       </header>
       <div className="precentacion">
-        <h1>Tarot Online y Ejercicios de Manifestación </h1>
-        <img
-          className="precentacionImg"
-          src={precentacionImg}
-          alt="imagen tarot"
-        />
-        <p className="parrafoPresentacion">
-          En un mundo lleno de incertidumbre y preguntas sin respuesta, a veces
-          necesitamos una brújula para guiarnos en nuestro viaje por la vida.
-          Hace años recorro el viaje de la vida acompañada del tarot la
-          astrología y muchas mas herramientas que me han permitido crear magia
-          y transformación en cada paso. Así como han sido mi varita mágica con
-          el paso de los años lo han sido para ciento de personas y no es magia
-          de esa que nos vende el cine, es guía, es luz es claridad, armonía a
-          través de la antigua y poderosa práctica del tarot y de diversas
-          técnicas te voy a acompañar, no como una maestra o una gurú que vende
-          una imagen, te voy a acompañar como alguien que ha recorrido el camino
-          en el que quizás hoy estas tu.
-        </p>
+        <h1 className="titulo">Tarot Cuántico</h1>
+        <div className="containerImgPrecentacion">
+          <img
+            className="precentacionImg"
+            src={precentacionImg}
+            alt="imagen tarot"
+          />
+          <p className="parrafoPresentacion">
+            En un mundo lleno de incertidumbre y preguntas sin respuesta, a
+            veces necesitamos una brújula para guiarnos en nuestro viaje por la
+            vida. Hace años recorro el viaje de la vida acompañada del tarot la
+            astrología y muchas mas herramientas que me han permitido crear
+            magia y transformación en cada paso. Así como han sido mi varita
+            mágica con el paso de los años lo han sido para ciento de personas y
+            no es magia de esa que nos vende el cine, es guía, es luz es
+            claridad, armonía a través de la antigua y poderosa práctica del
+            tarot y de diversas técnicas te voy a acompañar, no como una maestra
+            o una gurú que vende una imagen, te voy a acompañar como alguien que
+            ha recorrido el camino en el que quizás hoy estas tu.
+          </p>
+        </div>
+
         <div className="segundaPresentacion">
+          {/* <div className="containerImgSegundaPresentacion"> */}
           <img
             className="segundaPresentacionImg"
             src={tarotImg}
             alt="imagen cartas de tarot"
           />
+          {/* </div> */}
           <p className="parrafoSegundaPresentacion">
             El acceso a la información que nos da el tarot tiene múltiples
             beneficios que no se reducen a predecir el futuro, la información
@@ -173,8 +178,15 @@ function App() {
           3 audios con ejercicios creados en base a tu deseo, que sean grabados
           no quiere decir que sean genéricos, una vez que elijas esta opción
           recibirás un cuestionario el cual a mi me permite crear los ejercicios
-          en base a tu situación
+          en base a tu situación.
         </EstructuraServ>
+      </div>
+      <div className="containerMensajeFinal">
+        <p className="mensajeFinal">
+          La toma de consciencia de lo que no vemos es el primer paso en el
+          camino de la transformación. <br /> Yo voy a ser tu compañera en ese
+          camino.
+        </p>
       </div>
       <div className="botonWhatsapp">
         <a href="https://wa.link/xu56hn" target="_blank">
@@ -187,21 +199,17 @@ function App() {
       </div>
       <footer id="footerLinks">
         <a
-          className="linkInstagram"
-          href="https://www.google.com/webhp?hl=es-419&sa=X&ved=0ahUKEwjznLbYgZ2FAxXMq5UCHQxGAu0QPAgJ"
+          className="linkYouTube"
+          href="https://www.youtube.com/@10decopa"
           target="_blank"
         >
-          <img
-            className="instagramImg"
-            src={instagramIcon}
-            alt="Icono Instagram"
-          />
-          <p>Instagram</p>
+          <img className="youTubeImg" src={youtubeIcon} alt="Icono Youtube" />
+          <p>YouTube</p>
         </a>
 
         <a
           className="linkTelegram"
-          href="https://www.google.com/webhp?hl=es-419&sa=X&ved=0ahUKEwjznLbYgZ2FAxXMq5UCHQxGAu0QPAgJ"
+          href="https://t.me/tarotcuantico1234"
           target="_blank"
         >
           <img
