@@ -15,7 +15,7 @@ const EstructuraServ = ({
   children,
 }) => {
   return (
-    <div className="containerSercicios">
+    <div className="containerServicios">
       <ImgServ imagen={imagen} textoAlt={textoAlt} />
       <div className="containerParrafoGeneral">
         <p className="parrafoGeneral">{children}</p>

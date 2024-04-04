@@ -1,4 +1,4 @@
-.containerSercicios {
+.containerServicios {
   display: flex;
   width: 100%;
   max-width: 1000px;
@@ -27,7 +27,7 @@ h3 {
 }
 
 @media (max-width: 1020px) {
-  .containerSercicios {
+  .containerServicios {
     flex-direction: column;
     align-items: center;
   }
