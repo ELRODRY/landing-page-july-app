@@ -53,15 +53,12 @@ function App() {
             ha recorrido el camino en el que quizás hoy estas tu.
           </p>
         </div>
-
         <div className="segundaPresentacion">
-          {/* <div className="containerImgSegundaPresentacion"> */}
           <img
             className="segundaPresentacionImg"
             src={tarotImg}
             alt="imagen cartas de tarot"
           />
-          {/* </div> */}
           <p className="parrafoSegundaPresentacion">
             El acceso a la información que nos da el tarot tiene múltiples
             beneficios que no se reducen a predecir el futuro, la información
@@ -91,7 +88,6 @@ function App() {
           llevan un desarrollo, una explicación o un consejo según sea
           necesario.
         </EstructuraServ>
-
         <EstructuraServ
           tituloOpcion1="Valor de lectura videollamada"
           tituloOpcion2="Valor de lectura escrita"
@@ -132,7 +128,6 @@ function App() {
           problemáticas. Si tu situación es caótica te animo a elegir esta
           opción. Cantidad de preguntas a gusto. Tiempo 50min
         </EstructuraServ>
-
         <EstructuraServ
           tituloOpcion1="Valor de lectura videollamada"
           tituloOpcion2="Valor de lectura escrita"
@@ -206,7 +201,6 @@ function App() {
           <img className="youTubeImg" src={youtubeIcon} alt="Icono Youtube" />
           <p>YouTube</p>
         </a>
-
         <a
           className="linkTelegram"
           href="https://t.me/tarotcuantico1234"
