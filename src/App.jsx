@@ -5,11 +5,17 @@ import tresPreguntasImg from "./assets/3preguntas.png";
 import amorVinculosImg from "./assets/lecturaAmorVinculos.png";
 import lecturaGeneralImg from "./assets/lecturaGeneral.png";
 import manifestacioAcccionImg from "./assets/manifestacionAccion.png";
+import acompanamientoImg from "./assets/acompanamiento.png";
 import whatsappLogo from "./assets/whatsapp.svg";
 import tarotAstroImg from "./assets/tarotAstrologia.png";
+import mercadoPagoImg from "./assets/mercadoPago.svg";
+import airtmImg from "./assets/airtm.svg";
+import paypalImg from "./assets/paypal.svg";
+import bizumImg from "./assets/bizum.svg";
 import EstructuraServ from "./components/EstructuraServ.jsx";
 import telegramIcon from "./assets/telegram.svg";
 import youtubeIcon from "./assets/youtube.svg";
+import tiktokIcon from "./assets/tiktok.svg";
 function App() {
   return (
     <>
@@ -22,6 +28,11 @@ function App() {
               target="_blank"
             >
               Solicitar Turno
+            </a>
+          </div>
+          <div className="mediosDePago">
+            <a className="linkMediosDePago" href="#mediosDePagoLogos">
+              Medios de Pago
             </a>
           </div>
           <div className="redesSociales">
@@ -71,12 +82,25 @@ function App() {
           </p>
         </div>
         <EstructuraServ
+          tituloOpcion2="Valor de sesión"
+          imagen={acompanamientoImg}
+          textoAlt="Acompanamiento"
+          linkMensaje="we6fdb"
+          escritaArg="En Argentina $15000"
+          escritaUsd="En El Exterior $47 Usd"
+        >
+          Acompañamiento de procesos. A través de herramientas de access
+          consciousness®, astrología tarot terapéutico y bioneuroemoción,
+          crearemos un espacio de apertura emocional para buscar puntos de
+          claridad. La sesión tiene una duración de hasta 50min
+        </EstructuraServ>
+        <EstructuraServ
           tituloOpcion2="Valor de lectura escrita"
           imagen={tresPreguntasImg}
           textoAlt="Tres Preguntas"
           linkMensaje="mdpnf3"
-          escritaArg="En Argentina $5200"
-          escritaUsd="En El Exterior Pay Pal 7 Usd"
+          escritaArg="En Argentina $6500"
+          escritaUsd="En El Exterior $7 Usd"
         >
           Este formato va orientado a responder dudas concretas. Las preguntas
           pueden ser todas del mismo tema o temas distintos. Consejos a la hora
@@ -94,10 +118,8 @@ function App() {
           imagen={amorVinculosImg}
           textoAlt="Amor y Vinculos"
           linkMensaje="n9k5jl"
-          videoLLamadaArg="En Argentina $10000"
-          videoLLamadaUsd="En El Exterior Pay Pal 17 Usd"
-          escritaArg="En Argentina $8000"
-          escritaUsd="En El Exterior Pay Pal 12 Usd"
+          escritaArg="En Argentina $10000"
+          escritaUsd="En El Exterior $12 Usd"
         >
           ¿Qué hago? ¿Qué piensa esa persona? ¿Le importo? ¿debería continuar
           con ella? Cuando las emociones se vuelven caóticas y nuestras cabeza
@@ -113,10 +135,8 @@ function App() {
           imagen={lecturaGeneralImg}
           textoAlt="Lectura General"
           linkMensaje="noo79b"
-          videoLLamadaArg="En Argentina $12200"
-          videoLLamadaUsd="En El Exterior Pay Pal 33 Usd"
-          escritaArg="En Argentina $9000"
-          escritaUsd="En El Exterior Pay Pal 27 Usd"
+          escritaArg="En Argentina $12500"
+          escritaUsd="En El Exterior Pay Pal $27 Usd"
         >
           La lectura de tarot general puede abarcar diferentes temas como
           amor,salud, trabajo, o cualquier otra inquietud que tengas.Beneficios
@@ -135,9 +155,9 @@ function App() {
           textoAlt="Tarot y Astrologia"
           linkMensaje="3tvr6y"
           videoLLamadaArg="En Argentina $19000"
-          videoLLamadaUsd="En El Exterior Pay Pal 35 Usd"
-          escritaArg="En Argentina $15500"
-          escritaUsd="En El Exterior Pay Pal 27 Usd"
+          videoLLamadaUsd="En El Exterior $35 Usd"
+          escritaArg="En Argentina $24000"
+          escritaUsd="En El Exterior $27 Usd"
         >
           Este formato es uno de los más recomendados en Año Nuevo, o en las
           fechas de cumpleaños. Desde la astrología tenemos información
@@ -158,10 +178,10 @@ function App() {
           imagen={manifestacioAcccionImg}
           textoAlt="Manifestacion en accion"
           linkMensaje="wryq52"
-          videoLLamadaArg="En Argentina $37000"
-          videoLLamadaUsd="En El Exterior Pay Pal 53 Usd"
-          escritaArg="En Argentina $25500"
-          escritaUsd="En El Exterior Pay Pal 34 Usd"
+          videoLLamadaArg="En Argentina $50000"
+          videoLLamadaUsd="En El Exterior $53 Usd"
+          escritaArg="En Argentina $35500"
+          escritaUsd="En El Exterior $34 Usd"
         >
           Manifestación en acción personalizada. Entrenamiento de 3 ejercicios.
           Trabajaremos 1 vez por semana una sesion donde trabajaremos con tu
@@ -182,6 +202,29 @@ function App() {
           camino de la transformación. <br /> Yo voy a ser tu compañera en ese
           camino.
         </p>
+      </div>
+      <div id="mediosDePagoLogos" className="containerMediosDePago">
+        <img
+          className="imagenesMediosDePago"
+          src={mercadoPagoImg}
+          alt="imagen de mercado pago"
+        />
+        <img
+          className="imagenesMediosDePago"
+          src={paypalImg}
+          alt="imagen de paypal"
+        />
+
+        <img
+          className="imagenesMediosDePago"
+          src={airtmImg}
+          alt="imagen de airtm"
+        />
+        <img
+          className="imagenesMediosDePago"
+          src={bizumImg}
+          alt="imagen de bizum"
+        />
       </div>
       <div className="botonWhatsapp">
         <a href="https://wa.link/xu56hn" target="_blank">
@@ -212,6 +255,14 @@ function App() {
             alt="Icono Telegram"
           />
           <p>Telegram</p>
+        </a>
+        <a
+          className="linkTikTok"
+          href="https://www.tiktok.com/@tarotcuantico34?_t=8mqkYXxpnWA&_r=1"
+          target="_blank"
+        >
+          <img className="tiktokimg" src={tiktokIcon} alt="Icono TikTok" />
+          <p>TikTok</p>
         </a>
       </footer>
     </>

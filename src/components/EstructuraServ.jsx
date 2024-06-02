@@ -14,6 +14,7 @@ const EstructuraServ = ({
   linkMensaje,
   children,
 }) => {
+  console.log("Hola");
   return (
     <div className="containerServicios">
       <ImgServ imagen={imagen} textoAlt={textoAlt} />
